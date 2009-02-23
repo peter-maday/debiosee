@@ -4,4 +4,5 @@ http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/eq
 
 http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/eq02.png
 
-http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/demos-op-hs-01.gif http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/demos-op-hs-02.png
+||http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/demos-op-hs-01.gif||http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/demos-op-hs-02.png||
+||The input double-frame.||The PDE solutions shown as velocity vectors with velocity magnitudes in the background.||
