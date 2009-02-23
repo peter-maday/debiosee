@@ -1,0 +1,14 @@
+# Copyright (C) 2009 Ali Tonddast-Navaei
+# Licensed under the GNU LGPL Version 2.1.
+#
+# First added:  2009-02-21
+
+
+element = FiniteElement("Lagrange", "triangle", 1)
+
+v = TestFunction(element)
+u = TrialFunction(element)
+f = Function(element)
+
+a = v*u*dx
+L = v*f*dx
