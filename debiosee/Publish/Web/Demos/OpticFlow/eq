@@ -1,0 +1,4 @@
+# http://www.sitmo.com/latex/
+
+{\cal E}(\mathbf{u})= \int_\Omega \lVert \mathbf{u}.\mathbf{\nabla} I+\partial_t I\rVert^2 d\mathbf{x} + \int_\Omega \mathbf{\nabla}u_1:\mathbf{\nabla}u_2 \; d\mathbf{x}
+
