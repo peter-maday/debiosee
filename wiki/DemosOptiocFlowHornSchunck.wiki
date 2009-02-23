@@ -1,8 +1,22 @@
 http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Brand/Debiosee.png
+<hr>
+
+=Demo: Classical Horn-Schunck optic flow=
+
+_The full c++ code for this demo can be found [http://code.google.com/p/debiosee/source/browse/trunk/debiosee/Demos/optic-flow/ here]._
+
+== Overview ==
+The [http://en.wikipedia.org/wiki/Horn%E2%80%93Schunck_method Horn-Schunck] method is a well-known differrential [http://en.wikipedia.org/wiki/Optical_Flow optic flow] technique which performs motion estimation based on global smoothness assumption. This demo tries to minimize the functional:
 
 http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/eq01.png
+
+, where _I_(*x*) is the image brightness value, defined over the domain Ω, and *u*(*x*) stands for the velocity (displacement) field which registers two successive images by minimising the functional. The first part of the functional is the data term which satisfies the _Brightness Constancy Constraint_ in its linear form. Having this constraint by itself leads to the infamous [http://en.wikipedia.org/wiki/Aperture_problem#The_aperture_problem aperture problem]. The second term of the functional tries to alleviate this ill-posedness by regularization. The coefficient λ is a user input which balances the data term and regularization term contributions. The value of this number is found empirically by the user and the solutions are normally very sensitive to it.
+
+*Fig 1* shows a typical set of input images processed by _Debiosee_ to obtain the registering velocity field. As expected, due to the global smoothness assumption, the velocity field at discontinuities, eg around moving objects, is not sharp.
 
 http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/eq02.png
 
 ||http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/demos-op-hs-01.gif||http://debiosee.googlecode.com/svn/trunk/debiosee/Publish/Web/Demos/OpticFlow/demos-op-hs-02.png||
-||The input double-frame.||The PDE solutions shown as velocity vectors with velocity magnitudes in the background.||
+||*Fig 1.a.* The input double-frame.||*Fig 1.b.* The PDE solutions shown as velocity vectors with velocity magnitude in background.||
+
+== Implementation ==
