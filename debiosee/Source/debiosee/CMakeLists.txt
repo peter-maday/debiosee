@@ -8,6 +8,7 @@ set(DBS_SRC_FILES
     function/ImageFunction.cpp
     image/FunctionToImage.cpp
     mesh/ImageToMesh.cpp
+    mesh/ImageMesh.cpp
     )
 
 add_library(debiosee SHARED ${DBS_SRC_FILES})
