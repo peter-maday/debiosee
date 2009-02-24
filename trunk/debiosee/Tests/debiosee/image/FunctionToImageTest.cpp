@@ -11,9 +11,9 @@
 #include <debiosee/image/ITKImage.h>
 #endif // HAS_ITK
 
-#include <debiosee/mesh/ImageToMesh.h>
-#include <debiosee/function/ImageFunction.h>
-#include <debiosee/image/FunctionToImage.h>
+#include "ImageMesh.h"
+#include "ImageFunction.h"
+#include "FunctionToImage.h"
 #include "../function/Projection.h"
 
 #include <dolfin.h>
@@ -35,8 +35,7 @@ int main(int, char* [])
 	message("  [Done]");
 
 	message("--Creating image mesh...");
-	ImageToMesh i2m(image);
-	Mesh imesh = i2m.get_mesh();
+	ImageMesh imesh(image);
 	std::cout << imesh.str() << std::endl;
 	message("  [Done]");
 

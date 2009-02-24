@@ -8,10 +8,10 @@
 
 
 #ifdef HAS_ITK
-#include <debiosee/image/ITKImage.h>
+#include "ITKImage.h"
 #endif // HAS_ITK
 
-#include <debiosee/mesh/ImageToMesh.h>
+#include "ImageMesh.h"
 
 using namespace debiosee;
 using namespace dolfin;
@@ -25,9 +25,8 @@ int main(int, char* [])
 	typedef boost::shared_ptr< ImageType > ImagePointerType;
 	ImagePointerType image(new ImageType(img_file));
 
-	ImageToMesh i2m(image);
-	Mesh imesh = i2m.get_mesh();
-	std::cout << imesh.str() << std::endl;
+	ImageMesh mesh(image);
+	std::cout << mesh.str() << std::endl;
 #endif // HAS_ITK
 
     return 0;

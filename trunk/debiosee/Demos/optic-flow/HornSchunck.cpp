@@ -57,8 +57,7 @@ int main(int, char* [])
 
 	message("--Creating image mesh");
 	// Creating mesh only needs image size information -- use any images
-	ImageToMesh i2m(im_dxI);
-	Mesh imesh = i2m.get_mesh();
+	ImageMesh imesh(im_dxI);
 
 	message("--Assembling");
 	HornSchunckFunctionSpace V(imesh);

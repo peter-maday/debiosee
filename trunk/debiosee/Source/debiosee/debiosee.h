@@ -15,6 +15,6 @@
 #include <debiosee/image/FunctionToImage.h>
 
 // debiosee/mesh
-#include <debiosee/mesh/ImageToMesh.h>
+#include <debiosee/mesh/ImageMesh.h>
 
 #endif
