@@ -59,7 +59,7 @@ ImagePointerType im_dtI(new ImageType(derivative->GetOutput(2)));
 
 }}}
 
-Given one of these images, `debiosee::ImageToMesh` creates a `dolfin::UnitSquareMesh` in the 2-dimensional case:
+Given one of these images, `debiosee::ImageToMesh` creates a `dolfin::UnitSquare` in the 2-dimensional case:
 
 {{{
 // HornSchunck.cpp
