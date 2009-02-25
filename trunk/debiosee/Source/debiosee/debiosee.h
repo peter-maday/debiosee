@@ -14,6 +14,9 @@
 #include <debiosee/image/ITKImage.h>
 #include <debiosee/image/FunctionToImage.h>
 
+//debiosee/la
+#include <debiosee/la/ImageToMatrix.h>
+
 // debiosee/mesh
 #include <debiosee/mesh/ImageMesh.h>
 

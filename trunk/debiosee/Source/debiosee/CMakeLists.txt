@@ -7,6 +7,7 @@ add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/mesh")
 set(DBS_SRC_FILES
     function/ImageFunction.cpp
     image/FunctionToImage.cpp
+    la/ImageToMatrix.cpp
     mesh/ImageToMesh.cpp
     mesh/ImageMesh.cpp
     )
