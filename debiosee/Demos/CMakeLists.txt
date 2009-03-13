@@ -1,1 +1,1 @@
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/optic-flow")
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/OpticFlow")
